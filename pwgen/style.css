@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    background-color: rgba(63, 63, 63, 0.051);
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: pink;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+main{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+#result{
+    max-width: 80%;
+    padding: 20px;
+    background-color: pink;
+    border: 0.3px solid pink;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px pink;
+}
+
+#resultPassword{
+    font-size: xx-large;
+    font-family: 'OCR A Std', monospace;
+    text-align: center;
+    color: white;
+    word-wrap: break-word;
+}
+
+.userInput{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 15rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#length{
+    font-size: large;
+    height: 50px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#generateBtn{
+    font-size: large;
+    height: 50px;
+    border: none;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#generateBtn:hover{
+    background-color: rgb(255, 180, 192);
+}
+
+#generateBtn:active{
+    background-color: rgb(255, 132, 153);
+}
