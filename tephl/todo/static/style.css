@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+    display: flex;
+}
+
+header{
+    display: flex;
+    width: 15%;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+#title{
+    color: red;
+    margin: 80px 0px 30px 0px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.option{  
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: larger;
+    height: 3rem;
+}
+
+.option:hover{
+    color: red;
+    background-color: rgb(24, 24, 24);
+}
+
+main{
+    width: 85%;
+    margin: 80px 0px 0px 80px;
+}
+
+#feedtitle{
+    font-size: 3rem;
+}
+
+.feedposts{
+    display: flex;
+    margin: 50px 0px 0px 0px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.post{
+    height: auto;
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
+}
+
+.postchoices{
+    display: flex;
+    gap: 10px;
+}
+
+#acceptbtn{
+    width: 75%;
+    height: 2rem;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+#acceptbtn:hover{
+    background-color: rgba(255, 0, 0, 0.90);
+}
+
+#rejectbtn{
+    width: 25%;
+    height: 2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+#rejectbtn:hover{
+    background-color: rgba(255, 255, 255, 0.90);
+}
+
+.title{
+    font-size: xx-large;
+}
+
+.description{
+    text-align: justify;
+}
