@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="site_title">Poster</h1>
+        <div class="choices">
+            <a href="" id="Home">Home</a>
+            <a href="" id="popular">Popular</a>
+            <a href="" id="about">About</a>
+            <a href="" id="serach">Search</a>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="new_post">
+            <h1>New Post</h1>
+            <label for="post_title">Post Title</label>
+            <input type="text" placeholder="Title" id="post_title">
+            <label for="post_content">Post Content</label>
+            <input type="text" placeholder="My favorite food is..." id="post_content">
+            <button id="post_btn" onclick="post()">Post</button>
+        </div>
+        
+        <h1>Posts</h1>
+        <div id="posts">
+
+            <div class="post">
+                <div class="top">
+                    <p class="post_title">Title</p>
+                    <button id="delete_post" onclick="deletePost()" value="1">Delete</button>
+                </div>
+                
+                <p class="post_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, molestiae. Facere ipsum recusandae obcaecati reiciendis,
+                     omnis, repellat repudiandae exercitationem excepturi modi quod minima distinctio praesentium eius labore. Fuga, eveniet tempore?</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
