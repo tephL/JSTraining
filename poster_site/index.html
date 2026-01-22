@@ -25,20 +25,19 @@
             <input type="text" placeholder="Title" id="post_title">
             <label for="post_content">Post Content</label>
             <input type="text" placeholder="My favorite food is..." id="post_content">
-            <button id="post_btn" onclick="post()">Post</button>
+            <button id="post_btn" onclick="submit()">Post</button>
         </div>
         
         <h1>Posts</h1>
+        <button id="load_posts" onclick="load_posts()">Reload</button>
         <div id="posts">
 
             <div class="post">
                 <div class="top">
-                    <p class="post_title">Title</p>
-                    <button id="delete_post" onclick="deletePost()" value="1">Delete</button>
+                    <p class="post_title">title</p>
+                    <button id="delete_post" onclick="deletePost()" value="${post_id}">Delete</button>
                 </div>
-                
-                <p class="post_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, molestiae. Facere ipsum recusandae obcaecati reiciendis,
-                     omnis, repellat repudiandae exercitationem excepturi modi quod minima distinctio praesentium eius labore. Fuga, eveniet tempore?</p>
+                <p class="post_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
         </div>
