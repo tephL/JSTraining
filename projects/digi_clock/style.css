@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bunny.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#bgimg{
+    
+}
+
+.timebox{
+    width: 80%;
+    background-color: rgba(255, 0, 0, 0.291);
+    border-radius: 25px;
+    padding: 20px;
+}
+#time{
+    font-family: 'Papyrus, fantasy';
+    font-size: 80px;
+    text-align: center;
+}
