@@ -9,9 +9,10 @@ class Post{
     }
 }
 
-let p1 = new Post('Stephen', 'the most goated individual');
-let p2 = new Post('tephL', 'the most goated individual');
+// let p1 = new Post('Stephen', 'the most goated individual');
+// let p2 = new Post('tephL', 'the most goated individual');
 const posts_arr = [];
+const ascneding_posts = [];
 
 
 
@@ -28,7 +29,7 @@ function load_posts(){
         console.log(element.post_id);
         posts.innerHTML += `<div class="post">
                 <div class="top">
-                    <p class="post_title">${element.post_title}</p>
+                    <p class="post_title">${element.post_title} id = ${element.post_id}</p>
                     <button id="delete_post" onclick="deletePost()" value="${element.post_id}">Delete</button>
                 </div>
                 <p class="post_content">${element.post_content}</p>
@@ -49,20 +50,23 @@ function submit(){
     }
 }
 
+const debug = document.getElementById("debug");
 
 function deletePost(){
-    // 1. get the value of the button
-    // value of button must match the id of the
-    // 2. remove the post from array by id
     const delete_post = document.getElementById("delete_post").value;
-    console.log(delete_post);
+    // 1. get postId of where the button is
+    debug.textContent = 'find id: ' + delete_post;
+    // 2. find the matching postId from the array of objects
+    let matched_index = posts_arr.findIndex(item => item.post_id == delete_post) - 1;
+    debug.textContent += '/ found at index' + matched_index;     
+    // console.log(delete_post);
 
-
-    // delete from arr
-    let matched_index = posts_arr.findIndex(item => item.post_id == delete_post);
-    console.log(matched_index);
-    posts_arr.splice(matched_index, 1);
-    load_posts();
+    // // find post id 1
+    // 
+    // console.log(matched_index);
+    
+    // posts_arr.splice(matched_index, 1); //delete index 0
+    // load_posts();
 }
 
 
