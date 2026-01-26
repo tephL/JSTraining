@@ -9,6 +9,11 @@ function stop(){
     clearInterval(increment_interval);
 }
 
+function reset(){
+    clearInterval(increment_interval);
+    
+}
+
 function stopwatch(){
     const start_time = Date.now();
      

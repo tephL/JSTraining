@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.calculator{
+    width: 35%;
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border-radius: 25px;
+}
+
+#result{
+    height: 70px;
+    background-color: gainsboro;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    > *{
+        flex: 1 1 20%;
+    }
+}
+
+.button{
+    height: 65px;
+    width: 50px;
+    border: 1px solid;
+    border-radius:100px;
+    border: none;
+}
+
+.specialbutton{
+    background-color: orange;
+}
+
+.deletebutton{
+    background-color: red;
+    color: white;
+}
+
+#test{
+    color: white;
+}

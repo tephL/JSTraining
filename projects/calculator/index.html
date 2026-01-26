@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pic">
+        
+    </div>
+    
+
+    <div class="calculator">
+        <div class="top">
+            <p>tephL's Calc</p>
+            <p id="result">0</p>
+        </div>
+        
+
+        <div class="buttons">
+            <button class="button" onclick="addValue('1')">1</button>
+            <button class="button" onclick="addValue('2')">2</button>
+            <button class="button" onclick="addValue('3')">3</button>
+            <button class="button specialbutton" onclick="addValue('+')">+</button>
+            <button class="button" onclick="addValue('4')">4</button>
+            <button class="button" onclick="addValue('5')">5</button>
+            <button class="button" onclick="addValue('6')">6</button>
+            <button class="button specialbutton" onclick="addValue('-')">-</button>
+            <button class="button" onclick="addValue('7')">7</button>
+            <button class="button" onclick="addValue('8')">8</button>
+            <button class="button" onclick="addValue('9')">9</button>
+            <button class="button specialbutton" onclick="addValue('*')">x</button>
+            <button class="button deletebutton" onclick="remove()">ac</button>
+            <button class="button" onclick="addValue('0')">0</button>
+            <button class="button specialbutton" onclick="think(equals)">=</button>
+            <button class="button specialbutton" onclick="addValue('/')">/</button>
+            
+        </div>
+
+        
+    </div>
+
+    <div>
+        <p id="test">000</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
