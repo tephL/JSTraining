@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <div>tephL Calc Yo</div>
+        <div id="result">0</div>
+        <div class="buttons">
+            <button class="button" onclick="addValue('1')">1</button>
+            <button class="button" onclick="addValue('2')">2</button>
+            <button class="button" onclick="addValue('3')">3</button>
+            <button class="special button" onclick="addValue('+')">+</button>
+            <button class="button" onclick="addValue('4')">4</button>
+            <button class="button" onclick="addValue('5')">5</button>
+            <button class="button" onclick="addValue('6')">6</button>
+            <button class="special button" onclick="addValue('-')">-</button>
+            <button class="button" onclick="addValue('7')">7</button>
+            <button class="button" onclick="addValue('8')">8</button>
+            <button class="button" onclick="addValue('9')">9</button>
+            <button class="special button" onclick="addValue('*')">*</button>
+            <button class="reset button" onclick="reset()">AC</button>
+            <button class="button" onclick="addValue('0')">0</button>
+            <button class="special button" onclick="equals()">=</button>
+            <button class="special button" onclick="addValue('/')">/</button>
+        </div>
+    </div>
+
+    <p id="test"></p>
+    <script src="index.js"></script>
+</body>
+</html>
