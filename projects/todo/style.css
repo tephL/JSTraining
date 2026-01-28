@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    width: 30%;
+}
+
+#title{
+    text-align: center;
+    line-height: 2px;
+}
+
+.user_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+
+    #submit_task, #add_task{
+        width: 100%;
+    }
+}
+
+#tasks{
+    width: 100%;
+    background-color: gainsboro;
+    list-style-type: none;
+    padding: 20px;
+}
