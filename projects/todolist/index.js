@@ -2,14 +2,15 @@ class Task{
 	static task_ctr = 1;
 
 	constructor(task){
-		this.task_id = Task.task_ctr;
-    Task.task_ctr += 1;
-    this.task = task;
-    this.status = false;
-    this.date = new Date();
-    this.hour = this.date.getHours();
-    this.minutes = this.date.getMinutes();
-  }
+    this.title = 'title';
+		   this.id = Task.task_ctr;
+        Task.task_ctr += 1;
+        this.task = task; 
+        this.status = false;
+        this.date = new Date();
+        this.hour = this.date.getHours();
+        this.minutes = this.date.getMinutes();
+    }
 }
 
 // sample tasks
@@ -28,19 +29,16 @@ const tasks_list = document.getElementById('tasks_list');
 const add_task_btn = document.getElementById('add_task_btn');
 const add_task_content = document.getElementById('add_task_content');
 
-const list_tag = 'li';
-
 add_task_btn.addEventListener('click', event => {
   if(add_task_content.value == ''){
     console.log('must have input!');
   } else{
-    // make obj
-    let _task = new Task(add_task_content.value);
-    // append to arr
-    tasks_arr.push(_task);
-    // turn the task into a document obj
-    let _doctask = document.createElement(list_tag);
-    _doctask.textContent = _task.task;
+    
+    let _task = new Task(add_task_content.value);       // make task obj
+    tasks_arr.push(_task);      // append to arr
+    
+    let _doctask = convertTaskToDoc(_task);    // turn the task into a document obj
+    console.log(_doctask);
     //_doctask.id = _task. _task.task_id; ======
     // add doc obj to current view
     tasks_list.appendChild(_doctask);
@@ -51,4 +49,12 @@ add_task_btn.addEventListener('click', event => {
 });
 
 // helper for making a document object
+function convertTaskToDoc(task_obj){
+    let _taskDiv = document.createElement('div');
+    let _checkbtn = document.createElement('input');
+    
 
+
+    _doctask.textContent = `${task_obj.task} | id: ${task_obj.id}`;
+    return _doctask;
+}
