@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css">
   <title>tephL's To do List</title>
 </head>
 <body>
@@ -9,8 +10,22 @@
   <input type="text" id="add_task_content">
   <button id="add_task_btn">Submit</button>
   <h1>To do List</h1>
+
   <ul id="tasks_list">
-    <li>hello</li>
+    <div class="task">
+
+      <input type="checkbox" class="check_task">
+
+      <div>
+        <div class="task_header">
+          <h3 class="task_title">Title</h3>
+          <p class="task_id">ID</p>
+        </div>
+        <p class="task_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt cupiditate quia ex, temporibus aut perferendis cum dolore inventore et deleniti corrupti necessitatibus totam quibusdam laboriosam neque culpa reiciendis aperiam.</p>
+      </div>  
+      
+      
+    </div>
   </ul>
 
   <script src="index.js"><script>
