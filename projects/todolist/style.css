@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#tasks_list{
+    width: 50%;
+}
+
+.task {
+    background-color: gainsboro;
+    padding: 30px;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    gap: 30px;
+
+    .task_header{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.check_task{
+    height: 50px;
+    width: 50px;
+}
