@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Stephen",
+        "age": "19",
+        "fav": ["cookies", "brownies", "crinkles"]
+    },
+
+    {
+        "name": "Suvi",
+        "age": "18",
+        "fav": ["cookies", "brownies", "crinkles"]
+    },
+
+    {
+        "name": "tephL",
+        "age": "5",
+        "fav": ["cookies", "brownies", "crinkles"]
+    }
+]

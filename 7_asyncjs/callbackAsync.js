@@ -23,4 +23,17 @@ function eatBF(){
     console.log('eating breakfast now');
 }
 
+// this approach is called: Callback Hell
+
 makeCoffee(makeBread(eatBF));
+
+// or 
+/*
+ * makeCoffee(() => {
+ *  makeBread(() => {
+ *      eatBF();
+ *  });
+ * });
+ */
+
+

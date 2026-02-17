@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.mid-header{
+    display: none;
+}
+    
+.header-child{
+   border: 1px solid;
+   
+}
+
+main{
+    display: grid;
+    gap: 10px; 
+}
+
+.item{
+    border: 1px solid;
+}
+ 
+@media (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item{
+        min-height: 40px;
+    }
+
+    .mid-header{
+        display: block;
+    }
+}
