@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+main{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#user_choice{
+    display: flex;
+    width: 80%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.choices{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.enemy_choices{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.vs{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+}
+
+#bot_choice{
+    display: flex;
+    width: 80%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.hoverselection{
+    background-color: red;
+}
+
+.clickselect{
+    background-color: blue;
+}
