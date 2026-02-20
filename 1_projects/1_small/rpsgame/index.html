@@ -10,24 +10,27 @@
         <h1>Rock Paper Scissors</h1>
     </header>
 
+
     <main>
         <div id="user_choice">
-            <div class="choices rock">rock</div>
-            <div class="choices paper">paper</div>
-            <div class="choices scissors">scissors</div>
+            <div class="choices" id="rock">rock</div>
+            <div class="choices" id="paper">paper</div>
+            <div class="choices" id="scissors">scissors</div>
         </div>
 
-        <div class="vs">
-            vs
+        <div class="result hide">
+            <h1></h1>
+            <button id="retry">Retry</button>
         </div>
-        
+    
+    
         <div id="bot_choice">
-            <div class="enemy_choices rock">rock</div>
-            <div class="enemy_choices paper">paper</div>
-            <div class="enemy_choices scissors">scissors</div>
+            <div class="choices" id="e_rock">rock</div>
+            <div class="choices" id="e_paper">paper</div>
+            <div class="choices" id="e_scissors">scissors</div>
         </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="scriptv2.js"></script>
 </body>
 </html>

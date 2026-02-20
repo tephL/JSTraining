@@ -40,12 +40,6 @@ main{
     border: 1px solid;
 }
 
-.vs{
-    border: 1px solid;
-    height: 50px;
-    width: 50px;
-}
-
 #bot_choice{
     display: flex;
     width: 80%;
@@ -59,4 +53,13 @@ main{
 
 .clickselect{
     background-color: blue;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
 }
