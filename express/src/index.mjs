@@ -2,6 +2,8 @@ import express, { request, response } from 'express';
 
 const app = express();
 
+app.use(express.json());
+
 const PORT = process.env.PORT || 5000;
 
 const mock_users = [ 
@@ -17,8 +19,6 @@ app.get("/", (req, res) => {
 
 
 app.get("/api/users", (request, response) => {
-    console.log(request.query);
-
     const { 
         query:{filter, value}
     } = request;
@@ -34,6 +34,16 @@ app.get("/api/users", (request, response) => {
     response.send(filteredUsers);
 
     console.log("this gets reached if both filter and value is present"); 
+});
+
+
+app.post("/api/users", (req, res) => {
+    const newUser = req.body;
+
+    const newUserv2 = {id: mock_users.length + 1, ...newUser};
+    console.log(newUserv2);
+
+    mock_users.push(newUserv2);
 });
 
 
