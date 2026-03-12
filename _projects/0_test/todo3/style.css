@@ -1,0 +1,9 @@
+#tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.task{
+    border: 1px solid;
+    width: 300px;
+}
